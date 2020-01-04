@@ -46,7 +46,6 @@ void push(Stack* stack, Element element)
     stack->content[stack->topIndex] = element;
 }
 
-
 void destroyStack(Stack* stack)
 {
     if(stack->content == NULL)
@@ -56,11 +55,10 @@ void destroyStack(Stack* stack)
         free(stack->content);
         free(stack);
     }
-
 }
 Element pop(Stack* stack)
 {
-    if((stack->topIndex*2) < stack->size)
+    if(((stack->topIndex+1)*2) < stack->size)
     {
         Element *backup = (Element *) realloc(stack->content, sizeof(Element) * 1/2 * (stack->size));
         if (backup != NULL)
@@ -81,9 +79,10 @@ Element top(Stack* stack)
 
 void printStack(Stack* stack)
 {
-//    while(stack->topIndex != -1)
-//    {
-//        printf("%c",stack->content);
-//        stack->topIndex--;
-//    }
+    for (int i = stack->topIndex ; i >= 0 ; i--)
+    {
+        printf("%d:%c\n",i+1,stack->content[i].c);
+
+    }
+
 }
