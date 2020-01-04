@@ -24,25 +24,40 @@ int isLegalString(char str[])
             //if we found a closing bracket but the stack of the opening brackets is empty it means the match
             //opening bracket was not there ----> invalid.
             if(isStackEmpty(openStack))
+            {
+                destroyStack(openStack);
                 return 0;
+            }
             Element popElement = pop(openStack);
             switch(c)
             {
                 case '}':
                     if(popElement.c != '{')
+                    {
+                        destroyStack(openStack);
                         return 0;
+                    }
                     break;
                 case ']':
                     if(popElement.c != '[')
+                    {
+                        destroyStack(openStack);
                         return 0;
+                    }
                     break;
                 case ')':
                     if(popElement.c != '(')
+                    {
+                        destroyStack(openStack);
                         return 0;
+                    }
                     break;
                 case '>':
                     if(popElement.c != '<')
+                    {
+                        destroyStack(openStack);
                         return 0;
+                    }
                     break;
                 default:
                     break;
@@ -51,6 +66,10 @@ int isLegalString(char str[])
         i++;
     }
     if(!isStackEmpty(openStack))
+    {
+        destroyStack(openStack);
         return 0;
+    }
+    destroyStack(openStack);
     return 1;
 }
