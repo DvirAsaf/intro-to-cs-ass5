@@ -13,7 +13,7 @@ int isStackEmpty(Stack* stack)
 
 Stack* initStack()
 {
-    Stack* stack = ((Stack*) malloc(sizeof(stack)));
+    Stack* stack = ((Stack*) malloc(sizeof(Stack)));
     if(stack==NULL)
         return NULL;
     stack->content = ((Element*)malloc(sizeof(Element)));
@@ -25,97 +25,27 @@ Stack* initStack()
     return stack;
 }
 
-void push(Stack* stack, Element element){
-    stack->content[++stack->topIndex] = element;
-    Element * tempElement = stack->content;
-    if ((stack->size) - (stack->topIndex) == 1) {
-        tempElement = realloc(stack->content, 2*stack->size*(sizeof(Element)));
-        if (stack->content == NULL){
-            printf("error in allocating memory in push in stack.c!");
+void push(Stack* stack, Element element)
+{
+    Element * backupElement = stack->content;
+    if((stack->content) - (stack->topIndex +1) == 0)
+    {
+        size_t newSize = 2*stack->size*(sizeof(Element));
+        backupElement = realloc(stack->content,newSize);
+        if(backupElement == NULL)
+        {
+            printf("realloc() has failed\n");
+            //before exit program free allocated memory to avoid memory leaks
+            destroyStack(stack);
             exit(1);
         }
-        stack->content = tempElement;
+        stack->content = backupElement;
         stack->size *= 2;
     }
+    stack->topIndex++;
+    stack->content[stack->topIndex] = element;
 }
 
-//void push(Stack* stack, Element element)
-//{
-//
-////    stack->content[++stack->topIndex] = element;
-//    Element* tempElement;
-////    if(stack->size - stack->topIndex==1)
-////    {
-//    if(stack->content == NULL){
-//        printf("ERROR\n");
-//        destroyStack(stack);
-//        exit(1);
-//    }
-//    tempElement = realloc(stack->content,sizeof(Element)*2*stack->size );
-//    if(tempElement == NULL)
-//    {
-//        printf("ERROR\n");
-//        destroyStack(stack);
-//        exit(1);
-//    }
-////    free(tempElement);
-////    }
-////    stack->size*=2;
-////    stack->content = tempElement;
-////    tempElement = NULL;
-//
-//}
-//void push(Stack* stack, Element element)
-//{
-//
-////    stack->content[++stack->topIndex] = element;
-////    if(stack->size - stack->topIndex==1)
-////    {
-////        int s = stack->size;
-////        size_t  x = sizeof(Element);
-//
-//
-//
-//    Element* tempElement;
-//    tempElement = realloc(stack->content,sizeof(Element)*2*(stack->size) );
-//
-//
-//
-//
-////        tempElement = realloc(stack->content,x*20 );
-//        if(tempElement == NULL)
-//        {
-//            printf("ERROR\n");
-//            destroyStack(stack);
-//            exit(1);
-//        }
-////        stack->size*=2;
-////        stack->content = tempElement;
-////        tempElement = NULL;
-////    }
-//}
-
-
-//void push(Stack* stack, Element element)
-//{
-//
-////    stack->content[++stack->topIndex] = element;
-//    Element* tempElement;
-////    if(stack->size - stack->topIndex==1)
-////    {
-//        tempElement = realloc(stack->content,sizeof(Element)*2*stack->size );
-//        if(tempElement == NULL)
-//        {
-//            printf("ERROR\n");
-//            destroyStack(stack);
-//            exit(1);
-//        }
-////    }
-////    stack->size*=2;
-////    stack->content = tempElement;
-////    tempElement = NULL;
-//
-//}
 
 void destroyStack(Stack* stack)
 {
@@ -123,7 +53,6 @@ void destroyStack(Stack* stack)
         return;
     else
     {
-
         free(stack->content);
         free(stack);
     }
