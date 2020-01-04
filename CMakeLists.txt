@@ -3,4 +3,4 @@ project(PleaseWork C)
 
 set(CMAKE_C_STANDARD 99)
 
-add_executable(PleaseWork main.c stack.c stack.h element.c element.h queue.c queue.h)
+add_executable(PleaseWork main.c stack.c stack.h element.c element.h queue.c queue.h strings.c strings.h)
