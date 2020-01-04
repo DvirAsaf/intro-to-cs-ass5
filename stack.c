@@ -20,7 +20,6 @@ Stack* initStack()
     if (stack->content==NULL)
         return NULL;
     stack->size = 1;
-    stack->content->c = '1';
     stack->topIndex = -1;
     return stack;
 }
@@ -48,13 +47,10 @@ void push(Stack* stack, Element element)
 
 void destroyStack(Stack* stack)
 {
-    if(stack->content == NULL)
+    if(stack == NULL)
         return;
-    else
-    {
-        free(stack->content);
-        free(stack);
-    }
+    free(stack->content);
+    free(stack);
 }
 Element pop(Stack* stack)
 {
@@ -65,6 +61,12 @@ Element pop(Stack* stack)
         {
             stack->content = backup;
             stack->size*=1/2;
+        }
+        else{
+            printf("realloc() has failed\n");
+            //before exit program free allocated memory to avoid memory leaks
+            destroyStack(stack);
+            exit(1);
         }
     }
     Element temp = stack->content[stack->topIndex];
@@ -81,8 +83,25 @@ void printStack(Stack* stack)
 {
     for (int i = stack->topIndex ; i >= 0 ; i--)
     {
-        printf("%d:%c\n",i+1,stack->content[i].c);
+        printf("%d: %c\n",i+1,stack->content[i].c);
 
     }
 
 }
+
+int lenOfStack(Stack* stack)
+{
+    //TODO: wait for answer
+    if(stack == NULL)
+        return 0;
+    return stack->topIndex+1;
+}
+
+int capacityOfStack(Stack* stack)
+{
+    //TODO: wait for answer
+    if(stack == NULL)
+        return 0;
+    return stack->size;
+}
+
