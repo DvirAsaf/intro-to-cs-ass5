@@ -2,7 +2,7 @@
 #include "stack.h"
 #include "queue.h"
 #include "element.h"
-//#include "strings.h"
+#include "strings.h"
 
 void manageStack() {
     Stack* stack = initStack();
@@ -82,21 +82,21 @@ void manageQueue() {
     destroyQueue(queue);
 }
 
-//void manageStrings() {
-//    char* strings[] = {
-//            "()()()",
-//            "{[()]}",
-//            "((()))",
-//            "{999967(})",
-//            "<<578>",
-//            ""
-//    };
-//    int testLen = sizeof(strings) / sizeof(char*);
-//    for (int i = 0; i < testLen; i++) {
-//        char* str = strings[i];
-//        printf("%s\n", isLegalString(str) ? "Legal" : "Illegal");
-//    }
-//}
+void manageStrings() {
+    char* strings[] = {
+            "()()()",
+            "{[()]}",
+            "((()))",
+            "{999967(})",
+            "<<578>",
+            ""
+    };
+    int testLen = sizeof(strings) / sizeof(char*);
+    for (int i = 0; i < testLen; i++) {
+        char* str = strings[i];
+        printf("%s\n", isLegalString(str) ? "Legal" : "Illegal");
+    }
+}
 
 void main() {
     int input;
@@ -107,6 +107,6 @@ void main() {
     } else if (input == 2) {
         manageQueue();
     } else if (input == 3) {
-//        manageStrings();
+        manageStrings();
     }
 }
