@@ -47,10 +47,10 @@ RM = "C:\Program Files\JetBrains\CLion 2019.2.4\bin\cmake\win\bin\cmake.exe" -E 
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:\Users\Dvir\CLionProjects\PleaseWork
+CMAKE_SOURCE_DIR = C:\Users\Dvir\CLionProjects\CS-Ass5-new
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\Users\Dvir\CLionProjects\PleaseWork\cmake-build-debug
+CMAKE_BINARY_DIR = C:\Users\Dvir\CLionProjects\CS-Ass5-new\cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -79,9 +79,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Dvir\CLionProjects\PleaseWork\cmake-build-debug\CMakeFiles C:\Users\Dvir\CLionProjects\PleaseWork\cmake-build-debug\CMakeFiles\progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Dvir\CLionProjects\CS-Ass5-new\cmake-build-debug\CMakeFiles C:\Users\Dvir\CLionProjects\CS-Ass5-new\cmake-build-debug\CMakeFiles\progress.marks
 	$(MAKE) -f CMakeFiles\Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Dvir\CLionProjects\PleaseWork\cmake-build-debug\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Dvir\CLionProjects\CS-Ass5-new\cmake-build-debug\CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -176,6 +176,33 @@ main.c.s:
 	$(MAKE) -f CMakeFiles\PleaseWork.dir\build.make CMakeFiles/PleaseWork.dir/main.c.s
 .PHONY : main.c.s
 
+queue.obj: queue.c.obj
+
+.PHONY : queue.obj
+
+# target to build an object file
+queue.c.obj:
+	$(MAKE) -f CMakeFiles\PleaseWork.dir\build.make CMakeFiles/PleaseWork.dir/queue.c.obj
+.PHONY : queue.c.obj
+
+queue.i: queue.c.i
+
+.PHONY : queue.i
+
+# target to preprocess a source file
+queue.c.i:
+	$(MAKE) -f CMakeFiles\PleaseWork.dir\build.make CMakeFiles/PleaseWork.dir/queue.c.i
+.PHONY : queue.c.i
+
+queue.s: queue.c.s
+
+.PHONY : queue.s
+
+# target to generate assembly for a file
+queue.c.s:
+	$(MAKE) -f CMakeFiles\PleaseWork.dir\build.make CMakeFiles/PleaseWork.dir/queue.c.s
+.PHONY : queue.c.s
+
 stack.obj: stack.c.obj
 
 .PHONY : stack.obj
@@ -203,6 +230,33 @@ stack.c.s:
 	$(MAKE) -f CMakeFiles\PleaseWork.dir\build.make CMakeFiles/PleaseWork.dir/stack.c.s
 .PHONY : stack.c.s
 
+strings.obj: strings.c.obj
+
+.PHONY : strings.obj
+
+# target to build an object file
+strings.c.obj:
+	$(MAKE) -f CMakeFiles\PleaseWork.dir\build.make CMakeFiles/PleaseWork.dir/strings.c.obj
+.PHONY : strings.c.obj
+
+strings.i: strings.c.i
+
+.PHONY : strings.i
+
+# target to preprocess a source file
+strings.c.i:
+	$(MAKE) -f CMakeFiles\PleaseWork.dir\build.make CMakeFiles/PleaseWork.dir/strings.c.i
+.PHONY : strings.c.i
+
+strings.s: strings.c.s
+
+.PHONY : strings.s
+
+# target to generate assembly for a file
+strings.c.s:
+	$(MAKE) -f CMakeFiles\PleaseWork.dir\build.make CMakeFiles/PleaseWork.dir/strings.c.s
+.PHONY : strings.c.s
+
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -218,9 +272,15 @@ help:
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s
+	@echo ... queue.obj
+	@echo ... queue.i
+	@echo ... queue.s
 	@echo ... stack.obj
 	@echo ... stack.i
 	@echo ... stack.s
+	@echo ... strings.obj
+	@echo ... strings.i
+	@echo ... strings.s
 .PHONY : help
 
 

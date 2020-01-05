@@ -42,10 +42,10 @@ RM = "C:\Program Files\JetBrains\CLion 2019.2.4\bin\cmake\win\bin\cmake.exe" -E 
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:\Users\Dvir\CLionProjects\PleaseWork
+CMAKE_SOURCE_DIR = C:\Users\Dvir\CLionProjects\CS-Ass5-new
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\Users\Dvir\CLionProjects\PleaseWork\cmake-build-debug
+CMAKE_BINARY_DIR = C:\Users\Dvir\CLionProjects\CS-Ass5-new\cmake-build-debug
 
 # Include any dependencies generated for this target.
 include CMakeFiles/PleaseWork.dir/depend.make
@@ -58,48 +58,76 @@ include CMakeFiles/PleaseWork.dir/flags.make
 
 CMakeFiles/PleaseWork.dir/main.c.obj: CMakeFiles/PleaseWork.dir/flags.make
 CMakeFiles/PleaseWork.dir/main.c.obj: ../main.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Dvir\CLionProjects\PleaseWork\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/PleaseWork.dir/main.c.obj"
-	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\PleaseWork.dir\main.c.obj   -c C:\Users\Dvir\CLionProjects\PleaseWork\main.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Dvir\CLionProjects\CS-Ass5-new\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/PleaseWork.dir/main.c.obj"
+	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\PleaseWork.dir\main.c.obj   -c C:\Users\Dvir\CLionProjects\CS-Ass5-new\main.c
 
 CMakeFiles/PleaseWork.dir/main.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/PleaseWork.dir/main.c.i"
-	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\Dvir\CLionProjects\PleaseWork\main.c > CMakeFiles\PleaseWork.dir\main.c.i
+	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\Dvir\CLionProjects\CS-Ass5-new\main.c > CMakeFiles\PleaseWork.dir\main.c.i
 
 CMakeFiles/PleaseWork.dir/main.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/PleaseWork.dir/main.c.s"
-	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\Dvir\CLionProjects\PleaseWork\main.c -o CMakeFiles\PleaseWork.dir\main.c.s
+	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\Dvir\CLionProjects\CS-Ass5-new\main.c -o CMakeFiles\PleaseWork.dir\main.c.s
 
 CMakeFiles/PleaseWork.dir/stack.c.obj: CMakeFiles/PleaseWork.dir/flags.make
 CMakeFiles/PleaseWork.dir/stack.c.obj: ../stack.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Dvir\CLionProjects\PleaseWork\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/PleaseWork.dir/stack.c.obj"
-	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\PleaseWork.dir\stack.c.obj   -c C:\Users\Dvir\CLionProjects\PleaseWork\stack.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Dvir\CLionProjects\CS-Ass5-new\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/PleaseWork.dir/stack.c.obj"
+	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\PleaseWork.dir\stack.c.obj   -c C:\Users\Dvir\CLionProjects\CS-Ass5-new\stack.c
 
 CMakeFiles/PleaseWork.dir/stack.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/PleaseWork.dir/stack.c.i"
-	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\Dvir\CLionProjects\PleaseWork\stack.c > CMakeFiles\PleaseWork.dir\stack.c.i
+	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\Dvir\CLionProjects\CS-Ass5-new\stack.c > CMakeFiles\PleaseWork.dir\stack.c.i
 
 CMakeFiles/PleaseWork.dir/stack.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/PleaseWork.dir/stack.c.s"
-	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\Dvir\CLionProjects\PleaseWork\stack.c -o CMakeFiles\PleaseWork.dir\stack.c.s
+	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\Dvir\CLionProjects\CS-Ass5-new\stack.c -o CMakeFiles\PleaseWork.dir\stack.c.s
 
 CMakeFiles/PleaseWork.dir/element.c.obj: CMakeFiles/PleaseWork.dir/flags.make
 CMakeFiles/PleaseWork.dir/element.c.obj: ../element.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Dvir\CLionProjects\PleaseWork\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/PleaseWork.dir/element.c.obj"
-	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\PleaseWork.dir\element.c.obj   -c C:\Users\Dvir\CLionProjects\PleaseWork\element.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Dvir\CLionProjects\CS-Ass5-new\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/PleaseWork.dir/element.c.obj"
+	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\PleaseWork.dir\element.c.obj   -c C:\Users\Dvir\CLionProjects\CS-Ass5-new\element.c
 
 CMakeFiles/PleaseWork.dir/element.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/PleaseWork.dir/element.c.i"
-	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\Dvir\CLionProjects\PleaseWork\element.c > CMakeFiles\PleaseWork.dir\element.c.i
+	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\Dvir\CLionProjects\CS-Ass5-new\element.c > CMakeFiles\PleaseWork.dir\element.c.i
 
 CMakeFiles/PleaseWork.dir/element.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/PleaseWork.dir/element.c.s"
-	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\Dvir\CLionProjects\PleaseWork\element.c -o CMakeFiles\PleaseWork.dir\element.c.s
+	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\Dvir\CLionProjects\CS-Ass5-new\element.c -o CMakeFiles\PleaseWork.dir\element.c.s
+
+CMakeFiles/PleaseWork.dir/queue.c.obj: CMakeFiles/PleaseWork.dir/flags.make
+CMakeFiles/PleaseWork.dir/queue.c.obj: ../queue.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Dvir\CLionProjects\CS-Ass5-new\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/PleaseWork.dir/queue.c.obj"
+	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\PleaseWork.dir\queue.c.obj   -c C:\Users\Dvir\CLionProjects\CS-Ass5-new\queue.c
+
+CMakeFiles/PleaseWork.dir/queue.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/PleaseWork.dir/queue.c.i"
+	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\Dvir\CLionProjects\CS-Ass5-new\queue.c > CMakeFiles\PleaseWork.dir\queue.c.i
+
+CMakeFiles/PleaseWork.dir/queue.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/PleaseWork.dir/queue.c.s"
+	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\Dvir\CLionProjects\CS-Ass5-new\queue.c -o CMakeFiles\PleaseWork.dir\queue.c.s
+
+CMakeFiles/PleaseWork.dir/strings.c.obj: CMakeFiles/PleaseWork.dir/flags.make
+CMakeFiles/PleaseWork.dir/strings.c.obj: ../strings.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Dvir\CLionProjects\CS-Ass5-new\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/PleaseWork.dir/strings.c.obj"
+	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\PleaseWork.dir\strings.c.obj   -c C:\Users\Dvir\CLionProjects\CS-Ass5-new\strings.c
+
+CMakeFiles/PleaseWork.dir/strings.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/PleaseWork.dir/strings.c.i"
+	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\Dvir\CLionProjects\CS-Ass5-new\strings.c > CMakeFiles\PleaseWork.dir\strings.c.i
+
+CMakeFiles/PleaseWork.dir/strings.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/PleaseWork.dir/strings.c.s"
+	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\Dvir\CLionProjects\CS-Ass5-new\strings.c -o CMakeFiles\PleaseWork.dir\strings.c.s
 
 # Object files for target PleaseWork
 PleaseWork_OBJECTS = \
 "CMakeFiles/PleaseWork.dir/main.c.obj" \
 "CMakeFiles/PleaseWork.dir/stack.c.obj" \
-"CMakeFiles/PleaseWork.dir/element.c.obj"
+"CMakeFiles/PleaseWork.dir/element.c.obj" \
+"CMakeFiles/PleaseWork.dir/queue.c.obj" \
+"CMakeFiles/PleaseWork.dir/strings.c.obj"
 
 # External object files for target PleaseWork
 PleaseWork_EXTERNAL_OBJECTS =
@@ -107,11 +135,13 @@ PleaseWork_EXTERNAL_OBJECTS =
 PleaseWork.exe: CMakeFiles/PleaseWork.dir/main.c.obj
 PleaseWork.exe: CMakeFiles/PleaseWork.dir/stack.c.obj
 PleaseWork.exe: CMakeFiles/PleaseWork.dir/element.c.obj
+PleaseWork.exe: CMakeFiles/PleaseWork.dir/queue.c.obj
+PleaseWork.exe: CMakeFiles/PleaseWork.dir/strings.c.obj
 PleaseWork.exe: CMakeFiles/PleaseWork.dir/build.make
 PleaseWork.exe: CMakeFiles/PleaseWork.dir/linklibs.rsp
 PleaseWork.exe: CMakeFiles/PleaseWork.dir/objects1.rsp
 PleaseWork.exe: CMakeFiles/PleaseWork.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\Dvir\CLionProjects\PleaseWork\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking C executable PleaseWork.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\Dvir\CLionProjects\CS-Ass5-new\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking C executable PleaseWork.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\PleaseWork.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -124,6 +154,6 @@ CMakeFiles/PleaseWork.dir/clean:
 .PHONY : CMakeFiles/PleaseWork.dir/clean
 
 CMakeFiles/PleaseWork.dir/depend:
-	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" C:\Users\Dvir\CLionProjects\PleaseWork C:\Users\Dvir\CLionProjects\PleaseWork C:\Users\Dvir\CLionProjects\PleaseWork\cmake-build-debug C:\Users\Dvir\CLionProjects\PleaseWork\cmake-build-debug C:\Users\Dvir\CLionProjects\PleaseWork\cmake-build-debug\CMakeFiles\PleaseWork.dir\DependInfo.cmake --color=$(COLOR)
+	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" C:\Users\Dvir\CLionProjects\CS-Ass5-new C:\Users\Dvir\CLionProjects\CS-Ass5-new C:\Users\Dvir\CLionProjects\CS-Ass5-new\cmake-build-debug C:\Users\Dvir\CLionProjects\CS-Ass5-new\cmake-build-debug C:\Users\Dvir\CLionProjects\CS-Ass5-new\cmake-build-debug\CMakeFiles\PleaseWork.dir\DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/PleaseWork.dir/depend
 

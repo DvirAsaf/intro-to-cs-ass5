@@ -6,17 +6,37 @@
 
 #IncludeRegexTransform: 
 
-C:/Users/Dvir/CLionProjects/PleaseWork/element.h
+C:/Users/Dvir/CLionProjects/CS-Ass5-new/element.h
 
-C:/Users/Dvir/CLionProjects/PleaseWork/stack.c
+C:/Users/Dvir/CLionProjects/CS-Ass5-new/queue.c
+stdlib.h
+-
+queue.h
+C:/Users/Dvir/CLionProjects/CS-Ass5-new/queue.h
+
+C:/Users/Dvir/CLionProjects/CS-Ass5-new/queue.h
+element.h
+C:/Users/Dvir/CLionProjects/CS-Ass5-new/element.h
+stack.h
+C:/Users/Dvir/CLionProjects/CS-Ass5-new/stack.h
+
+C:/Users/Dvir/CLionProjects/CS-Ass5-new/stack.c
 stdlib.h
 -
 stdio.h
 -
 stack.h
-C:/Users/Dvir/CLionProjects/PleaseWork/stack.h
+C:/Users/Dvir/CLionProjects/CS-Ass5-new/stack.h
+assert.h
+-
 
-C:/Users/Dvir/CLionProjects/PleaseWork/stack.h
+C:/Users/Dvir/CLionProjects/CS-Ass5-new/stack.h
 element.h
-C:/Users/Dvir/CLionProjects/PleaseWork/element.h
+C:/Users/Dvir/CLionProjects/CS-Ass5-new/element.h
+
+C:/Users/Dvir/CLionProjects/CS-Ass5-new/strings.c
+string.h
+C:/Users/Dvir/CLionProjects/CS-Ass5-new/string.h
+stack.h
+C:/Users/Dvir/CLionProjects/CS-Ass5-new/stack.h
 

@@ -1,7 +1,9 @@
 file(REMOVE_RECURSE
   "CMakeFiles/PleaseWork.dir/element.c.obj"
   "CMakeFiles/PleaseWork.dir/main.c.obj"
+  "CMakeFiles/PleaseWork.dir/queue.c.obj"
   "CMakeFiles/PleaseWork.dir/stack.c.obj"
+  "CMakeFiles/PleaseWork.dir/strings.c.obj"
   "PleaseWork.exe"
   "PleaseWork.exe.manifest"
   "PleaseWork.pdb"

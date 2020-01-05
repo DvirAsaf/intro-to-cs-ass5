@@ -6,9 +6,20 @@ CMakeFiles/PleaseWork.dir/element.c.obj: ../element.h
 
 CMakeFiles/PleaseWork.dir/main.c.obj: ../element.h
 CMakeFiles/PleaseWork.dir/main.c.obj: ../main.c
+CMakeFiles/PleaseWork.dir/main.c.obj: ../queue.h
 CMakeFiles/PleaseWork.dir/main.c.obj: ../stack.h
+CMakeFiles/PleaseWork.dir/main.c.obj: ../strings.h
+
+CMakeFiles/PleaseWork.dir/queue.c.obj: ../element.h
+CMakeFiles/PleaseWork.dir/queue.c.obj: ../queue.c
+CMakeFiles/PleaseWork.dir/queue.c.obj: ../queue.h
+CMakeFiles/PleaseWork.dir/queue.c.obj: ../stack.h
 
 CMakeFiles/PleaseWork.dir/stack.c.obj: ../element.h
 CMakeFiles/PleaseWork.dir/stack.c.obj: ../stack.c
 CMakeFiles/PleaseWork.dir/stack.c.obj: ../stack.h
+
+CMakeFiles/PleaseWork.dir/strings.c.obj: ../element.h
+CMakeFiles/PleaseWork.dir/strings.c.obj: ../stack.h
+CMakeFiles/PleaseWork.dir/strings.c.obj: ../strings.c
 

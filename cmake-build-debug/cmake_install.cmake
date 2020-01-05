@@ -1,4 +1,4 @@
-# Install script for directory: C:/Users/Dvir/CLionProjects/PleaseWork
+# Install script for directory: C:/Users/Dvir/CLionProjects/CS-Ass5-new
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -40,5 +40,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "C:/Users/Dvir/CLionProjects/PleaseWork/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "C:/Users/Dvir/CLionProjects/CS-Ass5-new/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
