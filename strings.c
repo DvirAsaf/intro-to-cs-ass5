@@ -1,9 +1,21 @@
-#include <stdlib.h>
-#include <stdio.h>
-#include "strings.h"
-#include <assert.h>
+/*****************************************
+ * Name: Dvir Asaf
+ * ID: 313531113
+ * Group: 01
+ * Assignment: ass5
+ ****************************************/
+#include "string.h"
 #include "stack.h"
 
+/*****************************************
+ * Function Name: isLegalString.
+ * Input: char str[](arr of chars from the main).
+ * Output: int 1 or 0(int boolean 1 mean that the function is correct and 0 mean that is not).
+ * Function Operation: the function get from the main arr (char str[]) the function check if to all opening
+ * brackets have closing brackets in the same char and the same order.
+ * for example the main give [1234]. the function take the opening brackets('[') and check if
+ * the closing brackets is ']'. the char between the function ignored.
+ *****************************************/
 
 int isLegalString(char str[])
 {
@@ -59,6 +71,7 @@ int isLegalString(char str[])
                         return 0;
                     }
                     break;
+                //all other characters that are not above make the program continue to the next char.
                 default:
                     break;
             }
